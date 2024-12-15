@@ -1,78 +1,77 @@
 # Throne of Choices
 
-*Throne of Choices* is a strategic resource management game built with Python and Pygame. Lead your chosen house (Targaryen, Stark, or Lannister) to victory by managing resources and making critical decisions across five turns. Each house has unique traits, strengths, and victory conditions, challenging you to devise the perfect strategy.
+*Throne of Choices* is a Python-based strategic game built with Pygame. Lead one of the three houses—Targaryen, Stark, or Lannister—by managing resources and making crucial decisions across five turns. Strategize effectively to achieve victory and fulfill your chosen house's objectives.
 
 ---
 
 ## Features
 
-### *1. Immersive Gameplay*
-- *Team Selection: Choose your house—Targaryen, **Stark, or **Lannister*—each with unique strengths and objectives.  
-- *Decision-Making*: Perform actions each turn to manage resources like loyalty, gold, and army strength.  
-- *Strategic Thinking*: Plan moves based on house traits and adapt to challenges brought by resource constraints and random events.
+### Gameplay
+- *House Selection*: Choose between Targaryen, Stark, and Lannister, each with unique starting resources and traits.
+- *Strategic Decisions*: Manage resources like loyalty, gold, and army strength through well-timed actions.
+- *Random Events*: Encounter positive or negative random events to keep gameplay unpredictable.
 
-### *2. Random Events*
-Taking a "Risky Decision" triggers random events that can either:
-- Reward you with increased resources, or  
-- Penalize you with reduced loyalty, gold, or army strength.  
+### Visuals and Audio
+- Immersive graphics with themed backgrounds for different phases of the game.
+- Continuous background music to enhance gameplay experience.
 
-### *3. Unique Goals for Each House*
-Your selected house determines your starting resources and endgame conditions:
-- *House Targaryen*: Build the strongest army and reclaim the Iron Throne.  
-- *House Stark*: Uphold honor and defend the North through loyalty and defense.  
-- *House Lannister*: Use wealth and alliances to secure the kingdom.
+### Replayability
+- Multiple strategies and distinct goals for each house provide high replay value.
 
 ---
 
-## Gameplay Mechanics
+## Gameplay Overview
 
-### *1. Game Launch*
-- The welcome screen displays a themed message with background music and imagery.  
-
-### *2. Team Selection*
-Choose your house by selecting:
+### 1. Team Selection
+Choose your house by pressing the corresponding number:
 - *1*: Targaryen  
+  *Goal*: Reclaim the Iron Throne  
+  *Traits*: Strong army but limited gold  
+  *Starting Resources*:
+  - Loyalty: 40
+  - Gold: 80
+  - Army: 300
+
 - *2*: Stark  
+  *Goal*: Defend the North  
+  *Traits*: High loyalty but weak finances  
+  *Starting Resources*:
+  - Loyalty: 70
+  - Gold: 50
+  - Army: 200
+
 - *3*: Lannister  
+  *Goal*: Maintain control through wealth  
+  *Traits*: Wealthy but low loyalty  
+  *Starting Resources*:
+  - Loyalty: 30
+  - Gold: 200
+  - Army: 150
 
-### *3. Resource Management*
-Each house starts with predefined resources:
-| House          | Loyalty | Gold | Army Strength |  
-|----------------|---------|------|---------------|  
-| Targaryen      | 40      | 80   | 300           |  
-| Stark          | 70      | 50   | 200           |  
-| Lannister      | 30      | 200  | 150           |  
+### 2. Turn-Based Actions
+The game is played over *5 turns*, with one action allowed per turn:
+1. *Recruit Soldiers*: Use gold to increase your army.
+2. *Bribe Allies*: Spend gold to increase loyalty.
+3. *Fortify Defenses*: Spend small amounts of gold to slightly improve army strength.
+4. *Risky Decision*: Trigger random events that might either benefit or harm your resources.
 
-### *4. Turn-Based Decisions*
-Over five turns, choose one of four actions per turn:
-1. *Recruit Soldiers*: Increase your army at the cost of gold.  
-2. *Bribe Allies*: Increase loyalty by spending gold.  
-3. *Fortify Defenses*: Slightly increase your army at a small gold cost.  
-4. *Risky Decision*: Random events with potentially high risks and rewards.
-
-Each decision directly impacts your resources. Insufficient gold can prevent you from executing certain actions.
-
-### *5. Winning Conditions*
-To win, you must meet your house's unique objectives:
-- *Targaryen*:  
-  - Army strength ≥ 500  
-  - Loyalty ≥ 60  
-
-- *Stark*:  
-  - Loyalty ≥ 80  
-  - Army strength ≥ 200  
-
-- *Lannister*:  
-  - Gold ≥ 300  
-  - Loyalty ≥ 50  
-
-At the end of five turns, your progress is evaluated to determine victory or defeat.
+### 3. Random Events
+Choosing "Risky Decision" can result in:
+- *Gaining or Losing Gold*: Financial boons or losses.
+- *Increasing or Decreasing Loyalty*: Affects your house's support.
+- *Army Strength Adjustments*: Your army can grow stronger or weaker.
 
 ---
 
-## How to Play
+## Winning Conditions
+Victory depends on fulfilling your house's unique conditions by the end of the fifth turn:
 
-### *Setup*
-1. Clone this repository:
-   ```bash
-   git clone <repository_url>
+| House         | Goal                                         | Conditions                             |
+|---------------|---------------------------------------------|----------------------------------------|
+| *Targaryen* | Reclaim the Iron Throne                     | Army strength ≥ 500, Loyalty ≥ 60     |
+| *Stark*     | Defend the North                            | Loyalty ≥ 80, Army strength ≥ 200     |
+| *Lannister* | Maintain control through wealth and loyalty | Gold ≥ 300, Loyalty ≥ 50              |
+
+Failing to meet these conditions results in defeat.
+
+---
