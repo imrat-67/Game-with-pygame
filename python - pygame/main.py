@@ -6,7 +6,7 @@ pygame.init()
 
 width, height = 800, 599
 screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Throne of Choices")
+pygame.display.set_caption("Throne of IMRAT")
 
 Colour1 = (255, 255, 255)
 Colour2 = (0, 0, 0)
@@ -43,7 +43,7 @@ def draw_text(text, x, y, color=Colour1):
     label = font.render(text, True, color)
     screen.blit(label, (x, y))
 
-def show_temporary_message(text, duration=1000):
+def show_temporary_message(text, duration=999):
     overlay = screen.copy()
     draw_text(text, 200, 500, Colour6)
     pygame.display.flip()
