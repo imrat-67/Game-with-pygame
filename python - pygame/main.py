@@ -4,7 +4,7 @@ import sys
 
 pygame.init()
 
-width, height = 800, 600
+width, height = 800, 599
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Throne of Choices")
 
@@ -12,7 +12,7 @@ Colour1 = (255, 255, 255)
 Colour2 = (0, 0, 0)
 Colour3 = (255, 0, 0)
 Colour4 = (0, 255, 0)
-Colour5 = (0, 0, 255)
+Colour5 = (0, 0, 255)                                                                       
 Colour6 = (255, 255, 0)
 
 bg_image1 = pygame.image.load("background_image1.jpg")
