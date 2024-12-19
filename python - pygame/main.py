@@ -4,9 +4,9 @@ import sys
 
 pygame.init()
 
-width, height = 800, 599
+width, height = 799, 599
 screen = pygame.display.set_mode((width, height))
-pygame.display.set_caption("Throne of IMRAT")
+pygame.display.set_caption("Throne of Choices")
 
 Colour1 = (255, 255, 255)
 Colour2 = (0, 0, 0)
